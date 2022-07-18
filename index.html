@@ -1,17 +1,15 @@
 <head>
     <title>
-        Github Pages
+        Portfolio
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Kumbh+Sans:wght@400;700&family=Nunito:wght@200&display=swap" rel="stylesheet">
     
- <style>
+<style>
  html { /* Smooth scrolling */
     scroll-behavior: smooth;  
 }
-
-
 
 nav { /* Creates a gradient color background for the navbar */
     /* background-image: linear-gradient(to bottom right, rgb(211, 20, 20) , rgb(9, 9, 180)); */
@@ -31,8 +29,10 @@ nav li {  /* Navbar list items are center and spaced out */
 }
     a {  /* Links for the list items, underline and color adjusted */
         text-decoration: none;
-        color: white;
+        color: #232323;
+        font-size: 18px;
         font-family: 'Courier New', Courier, monospace;
+        font-weight:400;
     }
     a:hover {  /* When hovering over list items, color changes */
         color: rgb(211, 211, 211);
@@ -48,14 +48,17 @@ nav ul {  /* Centers list */
 
 
 body { 
-    background-color: #232323;
+    background-color: white;
     color: beige;
     padding: 0;
     margin: 0;
+    width: auto;
+
 
 }
 
 header {
+    background-color: white;
     /* background-image: linear-gradient(to top right, rgb(233, 10, 10) , rgb(0, 0, 114)); */
     color: beige;
     padding: 30px;
@@ -64,36 +67,30 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50rem
+    width: 60rem
 }
 
 h1 {
-    color: white;
+    color: #232323;
+    background-color: white;
     font-family: 'Nunito', sans-serif;
     display: flex;
-    justify-content: left;
-    
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.h1bottom {
+    height: 140px
 }
 
 p {
     color: #fa7ea3;
     display: flex;
-    justify-content: left;
-    font-family: Kumbh Sans, sans-serif;
-}
-
-
-
-.second {
-    /* background-image: linear-gradient(to bottom , rgb(0, 119, 167) , rgb(0, 0, 114)); */
-    height: 100rem;
-    padding: 30px;
-    margin-top: 1rem;
-    border-radius: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50rem
+    justify-content: center;
+    align-items: center;
+    font-family: Aleo, serif; /* Kumbh Sans, sans-serif; */
+    height: 1080px;
 }
 
 h2 {
@@ -118,17 +115,17 @@ h3 {
 h3:hover {
     color: green;
 }
-    </style>   
+</style>   
 
 </head>
 
 <nav>
     <ul>
         <li>
-            <a href="test">About</a>
+            <a href="#about">About</a>
         </li>
         <li>
-            <a href="test">Projects</a>
+            <a href="#projects">Projects</a>
         </li>
         <li>
             <a href = "mailto:fongstep@msu.edu">Contact</a>
@@ -137,27 +134,34 @@ h3:hover {
 </nav>
 
 
+<head>
+    <title>
+        Home
+    </title>
+</head>
+
 <body>
 
     <header>
-        <!-- Beginning of header -->
         <h1>
             Stephen Fong
         </h1>
-        <div>
-            
-        </div>
-        <p>
-            Paragraph 
-        </p> 
-        <!-- End of Header -->
-    </header>
-  
-    <div class="second">
-        <h2>
-            
-        </h2>
 
-    </div>
-        
+        <div class="h1bottom">
+        </div>
+
+        <div>
+
+        </div>
+        <p id="about">
+            About
+            Paragraph, things to say
+        </p>
+        <p id="projects">
+            I'm 
+        </p>
+        <p id="hobbies">
+            Dogs
+        </p>
+    </header>
 </body>
